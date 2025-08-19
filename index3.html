@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>MySQL</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./imagens/fundo2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>  
+    <img src="./imagens/logo.png" alt="Logo" class="logo">      
+
+    <div id="grant" class="card">
+      <h3>🔐 GRANT</h3>
+      <p>O comando <strong>GRANT</strong> é usado para conceder permissões a usuários em um banco de dados. Ele permite definir quem pode executar ações como SELECT, INSERT, UPDATE, DELETE, entre outras.</p>
+      <p>Você também pode conceder privilégios administrativos com <strong>GRANT ALL PRIVILEGES</strong>.</p>
+    </div>
+  
+    <div id="deny" class="card">
+      <h3>🚫 DENY</h3>
+      <p>O comando <strong>DENY</strong> não é suportado nativamente no MySQL. Ele é comum em outros SGBDs como SQL Server, onde é usado para negar explicitamente permissões, mesmo que o usuário tenha herdado permissões por grupo.</p>
+      <p>No MySQL, para bloquear acesso, você deve evitar o uso de <strong>GRANT</strong> ou usar <strong>REVOKE</strong> para remover permissões.</p>
+    </div>
+  
+    <div id="revoke" class="card">
+      <h3>❌ REVOKE</h3>
+      <p>O comando <strong>REVOKE</strong> é usado para remover permissões previamente concedidas com <strong>GRANT</strong>. Ele é essencial para manter a segurança e controle de acesso.</p>
+      <p>Após o REVOKE, o usuário perde os privilégios especificados.</p>
+    </div>
+  
+    <div id="tipos" class="card">
+      <h3>📊 Tipos de Dados MySQL</h3>
+      <p>O MySQL oferece diversos tipos de dados para armazenar informações de forma eficiente:</p>
+      <ul>
+        <li><strong>INT</strong> – números inteiros</li>
+        <li><strong>VARCHAR(n)</strong> – texto com tamanho variável</li>
+        <li><strong>TEXT</strong> – texto longo</li>
+        <li><strong>DATE</strong> – datas (AAAA-MM-DD)</li>
+        <li><strong>DATETIME</strong> – data e hora</li>
+        <li><strong>BOOLEAN</strong> – verdadeiro ou falso (representado como TINYINT)</li>
+        <li><strong>FLOAT / DOUBLE</strong> – números decimais</li>
+      </ul>
+      <p>Escolher o tipo correto impacta diretamente na performance e integridade dos dados.</p>
+    </div>
+
+    <nav class="menu-lateral">
+        <ul>
+          <li><a href="#grant">GRANT</a></li>
+          <li><a href="#deny">DENY</a></li>
+          <li><a href="#revoke">REVOKE</a></li>
+          <li><a href="#tipos">MySQL</a></li>
+        </ul>
+      </nav>
+      
+      <a href="index4.html" class="seta">
+        <img src="./imagens/seta.gif" alt="">
+      </a>
+
+      <a href="index2.html" class="seta-voltar">
+        <img src="./imagens/seta2.gif" alt="Voltar">
+      </a>
+  </body>
+         
+</html>

@@ -1,0 +1,113 @@
+.conteudo {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo {
+    display: block;
+    margin: 40px auto;
+    width: 600px;
+    filter: drop-shadow(0 0 10px #fff);
+  }
+
+    .logo2 {
+    display: block;
+    margin: 40px auto;
+    width: 700px;
+    filter: drop-shadow(0 0 10px #fff);
+  }
+
+  .logo3 {
+    display: block;
+    margin: 40px auto;
+    width: 300px;
+    filter: drop-shadow(0 0 10px #fff);
+  }
+
+  .card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .card p, .card ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  .menu-lateral {
+    position: fixed;
+    left: 20px;
+    top: 150px;
+    background-color: #ffffffcc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 100px;
+  }
+  
+  .menu-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-lateral li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-lateral a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .seta {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 50px;
+    top: 750px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .seta img {
+    width: 240px;
+    height: auto;
+    display: block;
+  }
+
+  .seta-voltar {
+    position: fixed;
+    bottom: 20px; /* distância do fundo */
+    left: 25px;   /* distância da lateral esquerda */
+    top: 750px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .seta-voltar img {
+    width: 240px;  /* tamanho final do GIF */
+    height: auto;
+    display: block;
+  }
+  

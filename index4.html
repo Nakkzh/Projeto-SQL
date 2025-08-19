@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcoes agregadas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./imagens/fundo2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-lateral {
+  position: fixed;
+  top: 150px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 1em;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+  color: #9e3628;
+}
+
+</style>
+
+<body>
+            <img src="./imagens/capa.jpg" alt="capa" class="logo2">
+        <tr>
+            <td colspan="2">
+                <div id="count" class="card">
+                <h2>COUNT</h2>
+                <p style="font-size:120%;">
+                    Função: Conta o número de linhas ou entradas não nulas.
+                    <br>
+                    COUNT: Conta TODAS as linhas da tabela, independentemente de terem NULL ou não. É o "quantos registros existem no total?".
+                    <br>
+                    COUNT(coluna): Conta apenas as linhas onde a coluna específica não é NULL. É o "quantos registros têm um valor preenchido aqui?".
+                </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="sum" class="card">
+                <h2>SUM</h2>
+                <p style="font-size:120%;">
+                    Função: Soma todos os valores em uma coluna numérica.
+                    <br>
+                    Ignora completamente os valores NULL. Eles não são tratados como zero, são simplesmente excluídos do cálculo.
+                    <br>
+                    Se todos os valores forem NULL, o resultado é NULL. 
+                </p>
+                </div>
+            </td>
+        </tr>
+       
+        <tr>
+            <td colspan="2">
+                <div id="avg" class="card">
+                <h2>AVG</h2>
+                <p style="font-size:120%;">
+                    Função: Calcula a média aritmética (soma dos valores / número de valores).
+                    <br>
+                    Ela também ignora NULL. A média é calculada apenas com os valores existentes.
+                    <br>
+                    A fórmula é SUM(Valor) / COUNT(Valor). Perceba que o divisor não é COUNT(*).
+                </p>
+                </div>
+            </td>
+        </tr>
+       
+        <tr>
+            <td colspan="2">
+                <div id="min" class="card">
+                <h2>MIN</h2>
+                <p style="font-size:120%;">
+                    Função: Encontra o menor valor em um conjunto.
+                    <br>
+                    Funciona com diversos tipos de dados:
+                    <ul>
+                    <li>Números: O menor número.</li>
+                    
+                    <li>Texto: O primeiro na ordem alfabética (A-Z).</li>
+                    
+                    <li>Datas: A data mais antiga.</li>
+                    </ul>
+                    <br>  
+                </p>
+                </div>
+            </td>
+        </tr>
+       
+        <tr>
+            <td colspan="2">
+                <div id="max" class="card">
+                <h2>MAX</h2>
+                <p style="font-size:120%;">
+                    Função: Encontra o maior valor em um conjunto.
+                    Funciona com diversos tipos de dados:
+                    <ul>
+                        <li>Números: O maior número.</li>
+                        <li>Texto: O último na ordem alfabética (A-Z).</li>
+                        <li>Datas: A data mais recente.</li>
+                    </ul>
+                </p>
+                </div>
+            </td>
+        </tr>
+       
+        <tr>
+         <td align="rigth">
+            <a href="index2.html"></a>
+         </td>
+
+        </tr>
+    </table>
+
+    <nav class="menu-lateral">
+        <ul>
+          <li><a href="#count">COUNT</a></li>
+          <li><a href="#sum">SUM</a></li>
+          <li><a href="#avg">AVG</a></li>
+          <li><a href="#min">MIN</a></li>
+          <li><a href="#max">MAX</a></li>
+        </ul>
+      </nav>
+      
+      <a href="index3.html" class="seta-voltar">
+        <img src="./imagens/seta2.gif" alt="Voltar">
+      </a>
+</body>
+</html>
